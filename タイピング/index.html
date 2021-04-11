@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>タイピングゲーム</title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="./style.css" />
+      <audio src ="./クイズ不正解1.mp3" id="missaudio">現環境では音が鳴りません</audio>
+      <audio src ="./拳銃の弾切れ.mp3" id="correctaudio"></audio>
+    </head>
+    <body>
+      <div class="wrap">
+      <input type="button" id="start_button" value="start" onclick="ready()" style="text-align: center">
+      <div id="count"></div>
+        <h1><div id="japanese"></div></h1>
+        <h2><div id="word"></div></h2>
+        <h3>正タイプ数</h3>
+        <div id="correct"></div>
+        <h3>誤タイプ</h3>
+        <div id="mistake"></div>
+        <h3>正確率</h3>
+        <div id="Accuracy-rate"></div>
+        <div id="scoredis"></div>
+      </div>
+      <script src="./typing.js"></script>
+    </body>
+
+</html>
